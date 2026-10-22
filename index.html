@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#3a0d66">
+<title>爺爺大爆破 · 滿貫大亨</title>
+<link rel="stylesheet" href="style.css?v=0.5.0">
+</head>
+<body>
+<main id="game">
+  <div id="backdrop"></div>
+  <canvas id="scene" aria-label="3D 遊戲畫面：拖曳瞄準，放開發射"></canvas>
+  <div id="flash"></div>
+
+  <header id="hud-top" hidden>
+    <div class="level-pill">
+      <span id="sceneName">金庫</span>
+      <strong>第 <b id="levelNo">1</b> / <span id="levelTotal">10</span> 關</strong>
+    </div>
+    <button id="soundBtn" class="icon-btn" aria-label="切換音效">♪</button>
+  </header>
+  <div id="progress" hidden><div id="progressFill"></div><span id="progressText">0 / 0</span></div>
+  <div id="tag" hidden></div>
+  <div id="combo"></div>
+  <div id="hint"></div>
+  <footer id="hud-bottom" hidden>
+    <div class="ammo"><img id="ammoIcon" alt=""><strong id="ammoNo">0</strong><small>剩餘大砲數</small></div>
+  </footer>
+  <img id="grandpa" alt="" hidden>
+
+  <section id="loading" class="overlay">
+    <div class="hero" id="hero">
+      <div class="hero-rays"></div>
+      <img id="heroGrandpa" alt="">
+    </div>
+    <div class="title-block">
+      <img id="heroLogo" alt="滿貫大亨">
+      <h1 id="gameTitle">爺爺大爆破</h1>
+      <p id="gameSubtitle">滿貫大亨 · 3D 破壞小遊戲</p>
+    </div>
+    <div class="start-block">
+      <div class="loading-track"><i id="loadingBar"></i></div>
+      <p id="loadingText">爺爺正在擺盤…</p>
+      <button id="startBtn" class="btn primary" disabled>準備中…</button>
+      <small>拖曳瞄準 · 放開發射 · 打爆爺爺的寶貝</small>
+    </div>
+  </section>
+
+  <!-- 過關：停一下自動進下一關（點一下可跳過） -->
+  <section id="clear" hidden>
+    <div class="clear-box">
+      <div id="clearStars"></div>
+      <h2 id="clearTitle">過關！</h2>
+      <p id="clearText"></p>
+    </div>
+  </section>
+
+  <!-- 下載畫面：10 關打完或任一關失敗都會跳這裡 -->
+  <section id="endcard" hidden>
+    <div class="end-rays"></div>
+    <img id="endLogo" class="end-logo" alt="滿貫大亨">
+    <img id="endGrandpa" class="end-grandpa" alt="">
+    <div class="end-panel">
+      <h2 id="endTitle"></h2>
+      <p id="endText"></p>
+      <ul id="endPerks"></ul>
+      <button id="ctaBtn" class="btn cta big"><img id="ctaCoin" alt=""><span id="ctaLabel">下載滿貫大亨</span></button>
+    </div>
+  </section>
+  <div id="debug" hidden></div>
+</main>
+<script src="game.js?v=0.5.0"></script>
+</body>
+</html>

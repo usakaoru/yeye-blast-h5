@@ -1,0 +1,89 @@
+{
+ "tiles": {
+  "vault": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "mahjong": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "gallery": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "rooftop": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "banquet": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10
+  ]
+ },
+ "bg": [
+  "vault",
+  "mahjong",
+  "gallery",
+  "rooftop",
+  "banquet"
+ ],
+ "heavy": [
+  "metal",
+  "stone"
+ ],
+ "hero": true,
+ "endcard": true,
+ "title": true,
+ "missing": [],
+ "ui": {
+  "combo_max": true,
+  "clear_perfect": true,
+  "clear": true,
+  "end_win": true,
+  "end_fail": true,
+  "tag_rotate": true,
+  "stars": true,
+  "digits": true
+ }
+}
